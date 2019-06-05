@@ -61,12 +61,12 @@ app.get("/hello",
 
 app.get("/studygroup",
     function (req, res) {
-   const user1 = {fname :"Amol", lname: "mekha"}
-   const user2 = {fname :"Ram",lname: "k"}
-   const user3 = {fname :"Jeremy",lname: "kim"}
-   const user4 = {fname :"Gerardo",lname: "Machado"}
-   const user5 = {fname :"Rabia",lname: "Shakoor"}
-   const user6 = {fname :"Allen",lname: "McQuiston"}
+   const user1 = {userid :"1",fname :"Amol", lname: "mekha"}
+   const user2 = {userid :"2",fname :"Ram",lname: "k"}
+   const user3 = {userid :"3",fname :"Jeremy",lname: "kim"}
+   const user4 = {userid :"4",fname :"Gerardo",lname: "Machado"}
+   const user5 = {userid :"5",fname :"Rabia",lname: "Shakoor"}
+   const user6 = {userid :"6",fname :"Allen",lname: "McQuiston"}
    
    const userlist = [user1,user2,user3,user4,user5,user6]
    grouplist = ["Team4",userlist]
