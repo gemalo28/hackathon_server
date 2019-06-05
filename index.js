@@ -59,7 +59,23 @@ app.get("/hello",
     }
 );
 
-const port = process.env.PORT || 1337;
+app.get("/studygroup",
+    function (req, res) {
+   const user1 = {fname :"Amol", lname: "mekha"}
+   const user2 = {fname :"Ram",lname: "k"}
+   const user3 = {fname :"Jeremy",lname: "kim"}
+   const user4 = {fname :"Gerardo",lname: "Machado"}
+   const user5 = {fname :"Rabia",lname: "Shakoor"}
+   const user6 = {fname :"Allen",lname: "McQuiston"}
+   
+   const userlist = [user1,user2,user3,user4,user5,user6]
+   grouplist = ["Team4",userlist]
+    res.json(grouplist)    
+       
+    }
+);
+
+const port = process.env.PORT || 5000;
 app.listen(port, function () {
     console.log("Listening on port " + port);
 });
